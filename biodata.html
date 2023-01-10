@@ -1,0 +1,352 @@
+<html>
+<head>
+<title>biodata</title>
+<link href = "aset/css/style.css" rel ="stylesheet">
+<body class="body">
+
+
+
+<style>
+body {
+  background-image: url('aset/image/home.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+body {
+  background-color:white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="biodata.html" target="_blank">Biodata</a></li>
+  <li><a href="experience.html"target="_blank">Experience</a></li>
+  <li><a href="education.html"target="_blank">Education</a></li>
+  <li><a href="gallery.html"target="_blank">Gallery</a></li>
+  <li><a href="family.html"target="_blank">Family</a></li>
+  
+  </li>
+</ul>
+
+
+
+
+
+
+<!╌jam haziq╌>
+
+<div id = "digital-clock" 
+           align="right"
+           font-size="30"></div>
+
+
+<script> 
+
+function Time() {
+
+ // Creating object of the Date class
+ var date = new Date();
+
+ // Get current hour
+ var hour = date.getHours();
+ // Get current minute
+ var minute = date.getMinutes();
+ // Get current second
+ var second = date.getSeconds();
+
+ // Variable to store AM / PM
+ var period = "";
+
+ // Assigning AM / PM according to the current hour
+ if (hour >= 12) {
+ period = "PM";
+ } else {
+ period = "AM";
+ }
+
+ // Converting the hour in 12-hour format
+ if (hour == 0) {
+ hour = 12;
+ } else {
+ if (hour > 12) {
+ hour = hour - 12;
+ }
+ }
+
+ // Updating hour, minute, and second
+ // if they are less than 10
+ hour = update(hour);
+ minute = update(minute);
+ second = update(second);
+
+ // Adding time elements to the div
+ document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period;
+
+ // Set Timer to 1 sec (1000 ms)
+ setTimeout(Time, 1000);
+}
+
+ // Function to update time elements if they are less than 10
+ // Append 0 before time elements if they are less than 10
+function update(t) {
+ if (t < 10) {
+ return "0" + t;
+ }
+ else {
+ return t;
+ }
+}
+
+Time();
+
+
+</script>
+
+<br><br>
+
+<h1 class="glow">Biodata</h1>
+
+
+
+<table border="1" width="100%" align="center"
+ bgcolor="#474E68">
+
+<tr> 
+<font face="verdana" color="red">
+
+<td>NAME:</td>
+
+<td><font color="white">MUHAMMAD HAZIQ&nbsp;ZAKWAN&nbsp;BIN MAT ZAKI</font></td>
+
+</font>
+
+</tr>
+
+<tr> <font face="verdana">
+
+<td colspan="2" align="center" height="40" bgcolor="#404258"><font color="white"><b>ADDRESS</b></font></td>
+
+</font>
+
+</tr>
+
+<tr>
+
+<font face="verdana">
+
+<td>CITY:</td>
+
+<td><font color="white">Kulim</font></td>
+
+</font>
+
+</tr>
+
+<tr>
+
+<font face="verdana">
+
+<td>STATE:</td>
+
+<td><font color="white">Kedah</font></td>
+
+</font>
+
+</tr>
+
+<tr>
+
+<font face="verdana">
+
+<td>POSTCODE</td>
+
+<td><font color="white">09700</font></td>
+
+</font>
+
+</tr>
+
+<tr>
+
+<font face="verdana">
+
+<td>EMAIL:</td>
+
+<td><font color="white">haziqzakwann@gmail.com</font></td>
+
+</font>
+
+</tr>
+
+<tr>
+
+<font face="verdana">
+
+<td>HOBBY:</td>
+
+<td><font color="white">Fitness and gym</font></td>
+
+</font>
+
+</tr>
+
+<tr>
+
+<font face="verdana">
+
+<td>MOBILE NO.:</td>
+
+<td><font color="white">011 3610 5411</font></td>
+
+</font>
+
+</tr>
+
+<tr>
+
+<font face="verdana">
+
+<td>DATE OF BIRTH:</td>
+
+<td><font color="white">3<sup>th</sup> DECEMBER 2002</font></td>
+
+</font>
+
+</tr>
+
+<tr>
+
+<font face="verdana">
+
+<td>GENDER:</td>
+
+<td><font color="white">Male</font></td>
+
+</font>
+
+</tr>
+
+
+
+</table>
+
+<center>
+<marquee><b><i><font color="white"size="25px">Three Quote  from me</font></i></b></marquee>
+<ol>
+<i>
+<font color="white" >
+  <li><q>Keep smiling, because life is a beautiful thing and there's so much to smile about</q></li><br>
+  <li><q>In three words I can sum up everything I've learned about life: it goes on</q></li><br>
+  <li><q>Life is a long lesson in humility</q></li>
+</i>
+</ol>
+</center>
+<br><br><br><br><br><br>
+
+
+
+
+<footer>
+  <p>Owner:Haziq Zakwan<br>
+<br><br>
+  
+
+<a href="https://wa.me/601136105411"><img src ="aset/image/whatsapp.png" height = "40"  witdh="40"   ></a>
+  <a href="https://instagram.com/mhdhziqz?igshid=YmMyMTA2M2Y="><img src ="aset/image/instagram.png" height = "40"  witdh="40"   ></a>
+  <a href="mailto:haziqzakwann@gmail.com"><img src ="aset/image/gmail.png" height = "40"  witdh="40" >
+</a>
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
